@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Homepage - ICT Solutions</title>
+<link href="ICTSolutions.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+
+<!-- The page div will handle the background colour of the main content, this will be consistent across all pages -->
+<div id="page">
+<div id="banner">
+<a href = "index.htm">
+<img src="images/ICTSolutionsLogo.png" alt="ICTSolutions Logo" > 
+</a>
+</div>
+<!-- The navigation div will contain the website navigation bar,this will be consistent across page -->
+<ul class="topnav">
+	<div class="topnav">
+  <a class ="active" href="index.htm" >Homepage</a>
+  <a href="theteam.htm" >Meet The Team</a>
+  <a href="jobspec.htm" >Job Specification and Quals</a>
+  <a href="joinus.htm" >JOIN US!</a>
+  <a href="courses.htm" >Useful Courses</a>
+</div>
+	
+<!-- This closes the 'navigation' div tag -->
+</ul>
+<script>
+//Time of day message script- by javascriptkit.com
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+//Modified by Neil Wickham
+//Credit must stay intact for use
+var Digital=new Date()
+var hours=Digital.getHours()
+//Configure message below to your own.
+
+if (hours>=0&&hours<=12) //MESSAGE FOR MORNING (00:00-11:59)
+document.write('<b>Good morning, welcome to our website.</b>')
+
+else if (hours>12&&hours<=17) //MESSAGE FOR AFTERNOON (12:01-17:00)
+document.write('<b>Good afternoon, welcome to our website.</b>')
+
+else //MESSAGE FOR THE REST OF THE DAY (17:00-23:59)
+document.write('<b>Good evening, welcome to our website.</b>')
+
+</script>
+
+
+<!-- The maincontent div will contain the content for each page, this comment will change across pages -->
+<div id ="maincontent">
+
+<div id="greenBlock">
+	<h1>About Us</h1>
+</div>
+
+<div>
+	<img src="images/theteam.jpg" class="positionImg"/>
+	<div id="pageTextBlock">		
+		<div class="p1">
+		<p>Our goal is to teach people about job roles in digital technologies.</p>
+<p>We are interested in recruiting interested parties of the types of jobs that will be in demand<br></br> within  the digital technology industry in 2023 and beyond.</p>
+
+<p>That's why we had created a site where you can find vacancies and useful information.</p>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<footer>
+	<ul class="footerBlock">
+		<li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+		<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="#"><i class="fa fa-flickr"></i></a></li>
+		<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+		<li class="powered">Powered by <a href="Thomas Szijarto" target="_blank">ICTSolutions</a></li>
+	</ul>
+</footer>
+
+<!-- This closes the 'maincontent' div tag -->
+
+
+<!-- This closes the 'page' div tag -->
+</div>
+
+
+
+
+
+</body>
+</html>
