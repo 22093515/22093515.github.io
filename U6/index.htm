@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Homepage - ICT Solutions</title>
+<meta name="description" content="ICTSolutions,rapidly growing IT company providing quality expertise and services on the world wide market together with its partners.">
+<meta name="keywords" content="ICTSolutions, WebDev , IT Services, Web Developing Courses, WebDev Jobs, Company Information.">
+<link href="ICTSolutions.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+
+<!-- The page div will handle the background colour of the main content, this will be consistent across all pages -->
+<div id="page">
+<div id="banner">
+<a href = "index.htm">
+<img src="images/ICTSolutionsLogo.png" alt="ICTSolutions Logo" > 
+</a>
+</div>
+<!-- The navigation div will contain the website navigation bar,this will be consistent across page -->
+<ul class="topnav">
+	<div class="topnav">
+  <a class ="active" href="index.htm" >Homepage</a>
+  <a href="theteam.htm" >Meet the Team</a>
+  <a href="jobspec.htm" >Job Specification and Quals</a>
+  <a href="joinus.htm" >JOIN US!</a>
+  <a href="courses.htm" >Useful Courses</a>
+</div>
+	
+<!-- This closes the 'navigation' div tag -->
+</ul>
+<script>
+//Time of day message script- by javascriptkit.com
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+//Modified by Neil Wickham
+//Credit must stay intact for use
+var Digital=new Date()
+var hours=Digital.getHours()
+//Configure message below to your own.
+
+if (hours>=0&&hours<=12) //MESSAGE FOR MORNING (00:00-11:59)
+document.write('<b>Good morning, welcome to our website.</b>')
+
+else if (hours>12&&hours<=17) //MESSAGE FOR AFTERNOON (12:01-17:00)
+document.write('<b>Good afternoon, welcome to our website.</b>')
+
+else //MESSAGE FOR THE REST OF THE DAY (17:00-23:59)
+document.write('<b>Good evening, welcome to our website.</b>')
+
+</script>
+
+
+<!-- The maincontent div will contain the content for each page, this comment will change across pages -->
+<div id ="maincontent">
+
+<div id="greenBlock">
+	
+</div>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/slider/0001.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/slider/0002.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/slider/0003.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<div id="greenBlock">
+	<h1>About Us</h1>
+</div>
+  <div class="p1"><p>ICT Solution is your trusted partner in Information and Communications Technology.We specialize in delivering comprehensive IT services and innovative solutions tailored to meet the unique needs of businesses across various industries.</p> <p>With a commitment to innovation and excellence, ICT Solution helps organizations leverage technology to achieve their strategic goals and improve operational efficiency.
+  <p>At the heart of ICT Solution's philosophy is a commitment to customer satisfaction. The company prides itself on understanding the unique challenges faced by its clients and providing personalized solutions that drive success. Regular feedback mechanisms and continuous improvement processes ensure that client needs are met and exceeded.</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="videoBlock">
+	<div id="coursesListBlock">
+		<div id="awardsList">
+			<img src="images/badge_0001.png" class="awardsImg"/>
+			<div class="awardTxt">Best customer service</div>		
+		</div>
+		<div id="awardsList">
+			<img src="images/badge_0002.png" class="awardsImg"/>
+			<div class="awardTxt">Marketing</div>		
+		</div>
+		<div id="awardsList">
+			<img src="images/badge_0003.png" class="awardsImg"/>
+			<div class="awardTxt">Indie Awards</div>		
+		</div>
+		<div id="awardsList">
+			<img src="images/badge_0001.png" class="awardsImg"/>
+			<div class="awardTxt">Creativity Awards</div>		
+		</div>
+		<div id="awardsList">
+			<img src="images/badge_0002.png" class="awardsImg"/>
+			<div class="awardTxt">Best Innovative and Creative Use of Technology</div>		
+		</div>
+	</div>
+</div>
+</div>
+<footer>
+	<ul class="footerBlock">
+		<li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+		<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="#"><i class="fa fa-flickr"></i></a></li>
+		<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+		<li class="powered">Powered by <a href="Thomas Szijarto" target="_blank">ICTSolutions</a></li>
+	</ul>
+</footer>
+
+<!-- This closes the 'maincontent' div tag -->
+
+
+<!-- This closes the 'page' div tag -->
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+</body>
+</html>

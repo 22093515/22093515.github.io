@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Meet The Team</title>
+<meta name="description" content="Are you looking to be part of something bigger?Take a look at our vacancies and consider our vacancies.">
+<meta name="keywords" content="Vacancies,Web Developer Trainee, web developer trainee, Jobs,jobs">
+
+<link href="ICTSolutions.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+
+<!-- The page div will handle the background colour of the main content, this will be consistent across all pages -->
+<div id="page">
+	<div id="banner">
+		<a href="index.htm">
+		<img src="images/ICTSolutionsLogo.png" alt="ICTSolutions Logo" > 
+		</a>
+	</div>
+	<!-- The navigation div will contain the website navigation bar,this will be consistent across page -->
+	<ul class="topnav">
+	<div class="topnav">
+  <a  	href="index.htm" >Homepage</a>
+  <a  		 href="theteam.htm" >Meet The Team</a>
+  <a   href="jobspec.htm" >Job Specification and Quals</a>
+  <a 	class ="active" href="joinus.htm" >JOIN US!</a>
+  <a	 href="courses.htm" >Useful Courses</a>
+</div>
+	
+<!-- This closes the 'navigation' div tag -->
+</ul>
+
+<!-- The maincontent div will contain the content for each page, this comment will change across pages -->
+<div id ="maincontent">
+
+<div id="greenBlock"><h1>Join Us!</h1></div>
+
+	<!--APPLICATION FORM-->
+	<div class="container">
+        <div class="apply-box">
+            <h2>Job Application <span class="title-small"></span></h2>
+
+            <form method="post" action="mailto:22093515@cambria.ac.uk">
+                <div class="form-container">
+                    <div class="form-control">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name"  placeholder="Enter First Name" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Enter Last Name" required >
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>						
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="job-role">Job Role</label pattern>
+                        <select name="job-role" id="job_role">
+                          
+                            <option value="frontend">Web Developer Apprenticeship</option>
+                            
+                        </select>
+                    </div>
+                    <div class="textarea-control">
+                        <label for="address">Address</label>
+                        <textarea name="address" id="address" cols="50" rows="4" placeholder="Enter Address"></textarea>
+                        
+                    </div>
+                    <div class="form-control">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="Enter City">
+                    </div>
+                    <div class="form-control">
+                        <label for="postcode">Postcode</label>
+                        <input type="text" id="postcode" name="postcode" pattern ="^([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([AZa-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9]?[A-Za-z]))))[0-9][A-Za-z]{2})$"
+						placeholder="Enter Postcode" required>
+						
+
+						
+                    </div>
+                    <div class="form-control">
+                        <label for="date">Date</label>
+                        <input value="2024-03-11" type="date" id="date" name="date" placeholder="Enter Date">
+                    </div>
+                    <div class="form-control">
+                        <label for="upload">Upload Your CV</label>
+                        <input type="file" id="upload" name="upload"/>
+						
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Apply Now</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+	<!--APPLICATION FORM-->
+
+
+
+
+
+
+
+
+
+	<div class="clear"></div>
+<footer>
+	<ul class="footerBlock">
+		<li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+		<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="#"><i class="fa fa-flickr"></i></a></li>
+		<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+		<li class="powered">Powered by <a href="Thomas Szijarto" target="_blank">ICTSolutions</a></li>
+	</ul>
+</footer>
+
+<!-- This closes the 'maincontent' div tag -->
+</div>
+
+<!-- This closes the 'page' div tag -->
+</div>
+
+
+
+</div>
+
+</body>
+</html>
